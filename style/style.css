@@ -45,4 +45,70 @@ body {
     margin-bottom: 20px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
   }
+  #solucoes {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #solucoes h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #0c0046;
+  }
+  
+  .carrossel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    width: 250px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card .icone img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #00303f;
+  }
+  
+  .card .descricao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0c0046;
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card:hover .descricao {
+    opacity: 1;
+  }
   
