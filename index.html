@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="header/header.css" />
     <nav>
       <img src="projeto/img/logo.png" alt="Logo Codewell" class="logo" />
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucoes.html">Soluções</a></li>
-        <li><a href="missao.html">Missão</a></li>
-      </ul>
-    </nav>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="solucoes.html">Soluções</a>
+        <a href="missao.html">Missão</a>
+      </div>
+    </nav>    
   </header>
 
   <main id="home">
@@ -28,7 +28,58 @@
 
     <section id="feedback" class="dynamic-section">
       <h2>O que dizem sobre a Codewell</h2>
-      <div id="feedback-container"></div>
+      <div id="feedback-container">
+        <link rel="stylesheet" href="carrossel/carrossel.css" />
+        <div class="feedback-carousel">
+          <div class="feedback-card active">
+            <p>Aqui na F1 Automação Comercial estamos muito satisfeitos com a Tiflux! A plataforma é intuitiva, completa e tem otimizado nossa gestão de atendimentos. O suporte é ágil e sempre disposto a ajudar.</p>
+            <p>Recomendo para qualquer empresa que busca eficiência e organização no atendimento ao cliente!</p>
+            <div class="user-info">
+              <img src="projeto/img/pessoa2.jpg" alt="Fernando Araújo" class="user-img" />
+              <div>
+                <strong>Fernando Araújo</strong><br />
+                <span>Gerente de automação na F1 Automação Comercial</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="feedback-card">
+            <p>Ficamos impressionados com a eficiência da equipe da Codewell. Nossos processos ficaram muito mais organizados e ágeis.</p>
+            <p>Excelente suporte e soluções tecnológicas que realmente fazem diferença.</p>
+            <div class="user-info">
+              <img src="projeto/img/pessoa1.jpg" alt="Carla Menezes" class="user-img" />
+              <div>
+                <strong>Carla Menezes</strong><br />
+                <span>CEO da InovaTech</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="feedback-card">
+            <p>Automatizamos diversas tarefas com a ajuda da Codewell, o que nos trouxe um ganho enorme de produtividade.</p>
+            <p>Super recomendo!</p>
+            <div class="user-info">
+              <img src="projeto/img/pessoa3.jpg" alt="Lucas Pereira" class="user-img" />
+              <div>
+                <strong>Lucas Pereira</strong><br />
+                <span>Analista de Sistemas na Infotec</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="feedback-card">
+            <p>Com a Codewell conseguimos visualizar melhor nossos indicadores e planejar com mais assertividade.</p>
+            <p>Equipe comprometida e solução robusta!</p>
+            <div class="user-info">
+              <img src="projeto/img/pessoa4.jpg" alt="Ana Souza" class="user-img" />
+              <div>
+                <strong>Ana Souza</strong><br />
+                <span>Supervisora de TI na WebSolutions</span>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
     </section>
 
     <section id="artigos" class="dynamic-section">
@@ -90,6 +141,7 @@
     <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
   </footer>
 
+  <script src="carrossel/carrossel.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

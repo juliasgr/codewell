@@ -5,23 +5,6 @@ body {
     color: #0c0046;
   }
   
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #6600ff;
-  }
-  
   section {
     padding: 40px 20px;
     max-width: 1200px;
@@ -48,6 +31,7 @@ body {
   #solucoes {
     padding: 40px 20px;
     text-align: center;
+
   }
   
   #solucoes h2 {
