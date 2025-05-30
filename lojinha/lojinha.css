@@ -1,0 +1,81 @@
+.loja-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.loja-section h2 {
+  color: #0c0046;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.catalogo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.produto-card {
+  background-color: white;
+  border: 2px solid #0c0046;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.produto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.produto-card h3 {
+  color: #0c0046;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.produto-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.produto-card a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0c0046;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.produto-card a:hover {
+  background-color: #1a1170;
+}
+
+@media (max-width: 1024px) {
+  .produto-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .produto-card {
+    width: 100%;
+  }
+}

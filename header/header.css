@@ -16,11 +16,8 @@ body {
     flex-wrap: nowrap;
    
   }
-  
-
   .logo {
     height: 120px;
-    max-width: 120px;
   }
   
 nav {
