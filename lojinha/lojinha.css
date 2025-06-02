@@ -75,7 +75,6 @@
   background-color: #1a1170;
 }
 
-/* Responsivo para telas menores */
 @media (max-width: 600px) {
   .produtos {
     grid-template-columns: 1fr;
