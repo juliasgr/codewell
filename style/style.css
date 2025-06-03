@@ -20,7 +20,7 @@ body {
   }
   
   #feedbacks, #artigos {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
   }
   
   h2 {
@@ -30,7 +30,7 @@ body {
   
   .feedback-card, .artigo-card {
     background-color: white;
-    border: 1px solid #ccc;
+    border: 1px;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
