@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #0c0046;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #0c0046;
+}
+
+p {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #000046;
+  z-index: 0;
+}
+
+.timeline-event {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #000046;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  position: relative;
+}
+
+.timeline-dot:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000046;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.timeline-year {
+  font-weight: bold;
+  color: #000046;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 16px;
+  text-align: center;
+  color: #000046;
+}
+
+.fotos-funcionarios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px auto;
+}
+
+.fotos-funcionarios img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dev-section {
+  text-align: center;
+  margin: 60px auto 100px;
+}
+
+.dev-section h3 {
+  margin-bottom: 20px;
+  color: #000046;
+}
+
+.dev-section .devs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dev-section .devs img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #000046;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.dev-section .names {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000046;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-event {
+    margin: 0 10px;
+  }
+
+  .fotos-funcionarios img {
+    width: 90%;
+  }
+
+  .dev-section .devs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
