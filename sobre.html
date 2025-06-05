@@ -4,24 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codewell | Empresa de TI</title>
-  <link rel="stylesheet" href="sobre/sobre.css" />
-  <link rel="stylesheet" href="header/header.css" />
-  <link rel="stylesheet" href="footer/footer.css" />
+  <link rel="stylesheet" href="my-web-project/styles/style.css" />
+  <link rel="stylesheet" href="my-web-project/componentes/header/header.css" />
+   <link rel="stylesheet" href="my-web-project/sobre/sobre.css" />
 </head>
 
 <body>
-  <header>
-    <nav>
-      <img src="projeto/img/logo.png" alt="Logo Codewell" class="logo" />
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="lojinha.html">Loja</a>
-        <a href="missao.html">Missão</a>
-        <a href="noticias.html">Notícias</a>
-      </div>
-    </nav>
-  </header>
+    <header>
+   <nav role="navigation" aria-label="Menu principal">
+  <img src="my-web-project/assets/img/logo.png" alt="Logo Codewell" class="logo" />
+
+  <button class="hamburguer" aria-label="Abrir menu">
+    ☰
+  </button>
+  
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="lojinha.html">Loja</a>
+    <a href="missao.html">Missão</a>
+    <a href="noticias.html">Notícias</a>
+  </div>
+</nav>
+ </header>
 
   <main>
     <h2>Nossa História</h2>
@@ -57,31 +62,32 @@
 
     <h2>Nossos colaboradores:</h2>
     <section class="fotos-funcionarios">
-      <img src="projeto/img/grupo1.jpg" alt="Funcionário 1" />
-      <img src="projeto/img/grupo2.jpg" alt="Funcionário 2" />
-      <img src="projeto/img/grupo3.jpg" alt="Funcionário 3" />
-      <img src="projeto/img/grupo4.jpg" alt="Funcionário 4" />
+      <img src="my-web-project/assets/img/grupo1.jpg" alt="Funcionário 1" />
+      <img src="my-web-project/assets/img/grupo2.jpg" alt="Funcionário 2" />
+      <img src="my-web-project/assets/img/grupo3.jpg" alt="Funcionário 3" />
+      <img src="my-web-project/assets/img/grupo4.jpg" alt="Funcionário 4" />
     </section>
 
     <section class="dev-section">
       <h3>Desenvolvido por:</h3>
       <div class="devs">
         <div>
-          <img src="projeto/img/julia.jpg" alt="Julia de Souza Seger" class="foto-dev" />
+          <img src="my-web-project/assets/img/julia.jpg" alt="Julia de Souza Seger" class="foto-dev" />
           <p class="names">Julia de Souza Seger</p>
         </div>
         <div>
-          <img src="projeto/img/julia.jpg" alt="Iasmin Cristina Krueger" class="foto-dev" />
+          <img src="my-web-project/assets/img/julia.jpg" alt="Iasmin Cristina Krueger" class="foto-dev" />
           <p class="names">Iasmin Cristina Krueger</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
-  </footer>
+ <footer>
+  <link rel="stylesheet" href="my-web-project/componentes/footer/footer.css" />
+  <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
+</footer>
 
-  <script src="script.js"></script>
+  <script src="my-web-project/script/script.js"></script>
 </body>
 </html>

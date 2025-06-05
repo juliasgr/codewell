@@ -5,23 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codewell | Empresa de TI</title>
-  <link rel="stylesheet" href="home/home.css" />
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="header/header.css" />
+  <link rel="stylesheet" href="my-web-project/home/home.css" />
+  <link rel="stylesheet" href="my-web-project/styles/style.css" />
+  <link rel="stylesheet" href="my-web-project/componentes/header/header.css" />
 </head>
 
 <body>
   <header>
-    <nav role="navigation" aria-label="Menu principal">
-      <img src="projeto/img/logo.png" alt="Logo Codewell" class="logo" />
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="lojinha.html">Loja</a>
-        <a href="missao.html">Missão</a>
-        <a href="noticias.html">Notícias</a>
-      </div>
-    </nav>
+   <nav role="navigation" aria-label="Menu principal">
+  <img src="my-web-project/assets/img/logo.png" alt="Logo Codewell" class="logo" />
+
+  <button class="hamburguer" aria-label="Abrir menu">
+    ☰
+  </button>
+
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="lojinha.html">Loja</a>
+    <a href="missao.html">Missão</a>
+    <a href="noticias.html">Notícias</a>
+  </div>
+</nav>
+
   </header>
 
   <main id="home">
@@ -32,13 +38,13 @@
           <p>Inovação e tecnologia para transformar sua empresa</p>
         </div>
         <div class="foto-imagem">
-          <img src="projeto/img/imgtelahome.jpg" alt="foto" />
+          <img src="my-web-project/assets/img/imgtelahome.jpg" alt="foto" />
         </div>
       </div>
     </section>
 
 
-    <link rel="stylesheet" href="estatisticas/estatisticas.css" />
+    <link rel="stylesheet" href="my-web-project/estatisticas/estatisticas.css" />
     <section class="estatisticas">
       <div class="estatistica">
         <h3 data-target="20" data-label="+20">0</h3>
@@ -86,14 +92,14 @@
     <section id="feedback" class="dynamic-section">
       <h2>O que dizem sobre nós:</h2>
       <div id="feedback-container">
-        <link rel="stylesheet" href="carrossel/carrossel.css" />
+        <link rel="stylesheet" href="my-web-project/carrossel/carrossel.css" />
         <div class="feedback-carousel">
           <div class="feedback-card active">
             <p>Aqui na Prisma Automação Comercial estamos muito satisfeitos com a Codewell! A plataforma é intuitiva,
               completa e tem otimizado nossa gestão de atendimentos. O suporte é ágil e sempre disposto a ajudar.</p>
             <p>Recomendo para qualquer empresa que busca eficiência e organização no atendimento ao cliente!</p>
             <div class="user-info">
-              <img src="projeto/img/pessoa2.jpg" alt="Fernando Araújo" class="user-img" />
+              <img src="my-web-project/assets/img/pessoa2.jpg" alt="Fernando Araújo" class="user-img" />
               <div>
                 <strong>Fernando Araújo</strong><br />
                 <span>Gerente de automação na Prisma Automação Comercial</span>
@@ -108,7 +114,7 @@
               organizados e ágeis.</p>
             <p>Excelente suporte e soluções tecnológicas que realmente fazem diferença.</p>
             <div class="user-info">
-              <img src="projeto/img/pessoa1.jpg" alt="Carla Menezes" class="user-img" />
+              <img src="my-web-project/assets/img/pessoa1.jpg" alt="Carla Menezes" class="user-img" />
               <div>
                 <strong>Carla Menezes</strong><br />
                 <span>CEO da InovaTech</span>
@@ -121,7 +127,7 @@
               produtividade.</p>
             <p>Super recomendo!</p>
             <div class="user-info">
-              <img src="projeto/img/pessoa3.jpg" alt="Lucas Pereira" class="user-img" />
+              <img src="my-web-project/assets/img/pessoa3.jpg" alt="Lucas Pereira" class="user-img" />
               <div>
                 <strong>Lucas Pereira</strong><br />
                 <span>Analista de Sistemas na Infotec</span>
@@ -133,7 +139,7 @@
             <p>Com a Codewell conseguimos visualizar melhor nossos indicadores e planejar com mais assertividade.</p>
             <p>Equipe comprometida e solução rápida!</p>
             <div class="user-info">
-              <img src="projeto/img/pessoa4.jpg" alt="Ana Souza" class="user-img" />
+              <img src="my-web-project/assets/img/pessoa4.jpg" alt="Ana Souza" class="user-img" />
               <div>
                 <strong>Ana Souza</strong><br />
                 <span>Supervisora de TI na WebSolutions</span>
@@ -167,7 +173,7 @@
       <div class="carrossel">
         <div class="card">
           <div class="icone">
-            <img src="projeto/img/solucoesimg/quebra-cabeca.png" alt="Gestão de Chamados">
+            <img src="my-web-project/assets/img/solucoesimg/quebra-cabeca.png" alt="Gestão de Chamados">
           </div>
           <h3>Gestão de Chamados e SLA</h3>
           <p class="descricao">Controle de chamados com prazos e prioridades bem definidos.</p>
@@ -175,7 +181,7 @@
 
         <div class="card">
           <div class="icone">
-            <img src="projeto/img/solucoesimg/moeda.png" alt="Automatizações">
+            <img src="my-web-project/assets/img/solucoesimg/moeda.png" alt="Automatizações">
           </div>
           <h3>Automatizações de processos</h3>
           <p class="descricao">Fluxos automatizados que economizam tempo e evitam erros.</p>
@@ -183,7 +189,7 @@
 
         <div class="card">
           <div class="icone">
-            <img src="projeto/img/solucoesimg/forma.png" alt="Relatórios">
+            <img src="my-web-project/assets/img/solucoesimg/forma.png" alt="Relatórios">
           </div>
           <h3>Relatórios inteligentes</h3>
           <p class="descricao">Dados estratégicos para decisões mais assertivas.</p>
@@ -191,7 +197,7 @@
 
         <div class="card">
           <div class="icone">
-            <img src="projeto/img/solucoesimg/inclusao.png" alt="Consultoria">
+            <img src="my-web-project/assets/img/solucoesimg/inclusao.png" alt="Consultoria">
           </div>
           <h3>Consultoria personalizada</h3>
           <p class="descricao">Suporte especializado para adaptar à sua realidade.</p>
@@ -201,13 +207,13 @@
 
 
     <footer>
-      <link rel="stylesheet" href="footer/footer.css" />
+      <link rel="stylesheet" href="my-web-project/componentes/footer/footer.css" />
       <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="estatisticas/estatisticas.js"></script>
-    <script src="carrossel/carrossel.js"></script>
-    <script src="script.js"></script>
+    <script src="my-web-project/estatisticas/estatisticas.js"></script>
+    <script src="my-web-project/carrossel/carrossel.js"></script>
+    <script src="my-web-project/script/script.js"></script>
 </body>
 
 </html>

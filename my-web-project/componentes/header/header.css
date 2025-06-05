@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #0c0046;
+}
+
+header {
+  background-color: #0c0046;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row; 
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.menu a:hover {
+  color: #6600ff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburguer {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1b005c;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+}

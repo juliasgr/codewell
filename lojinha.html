@@ -4,22 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codewell | Empresa de TI</title>
-  <link rel="stylesheet" href="lojinha/lojinha.css" />
+  <link rel="stylesheet" href="my-web-project/lojinha/lojinha.css" />
+  <link rel="stylesheet" href="my-web-project/styles/style.css" />
+  <link rel="stylesheet" href="my-web-project/componentes/header/header.css" />
 </head>
+
 <body>
   <header>
-    <link rel="stylesheet" href="header/header.css" />
-    <link rel="stylesheet" href="lojinha.css">
-    <nav>
-      <img src="projeto/img/logo.png" alt="Logo Codewell" class="logo" />
-      <div class="menu">
+    <nav role="navigation" aria-label="Menu principal">
+      <img src="my-web-project/assets/img/logo.png" alt="Logo Codewell" class="logo" />
+
+      <button class="hamburguer" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <div class="menu" id="menu">
         <a href="index.html">Home</a>
         <a href="sobre.html">Sobre</a>
         <a href="lojinha.html">Loja</a>
         <a href="missao.html">Missão</a>
         <a href="noticias.html">Notícias</a>
       </div>
-    </nav>  
+    </nav>
   </header>
 
   <header class="loja-header">
@@ -30,50 +36,57 @@
   <main class="catalogo">
     <section class="produtos">
       <div class="produto-card">
-        <img src="projeto/mockuplojinha/ecobag.png" alt="Ecobag Codewell">
+        <img src="my-web-project/assets/mockuplojinha/ecobag.png" alt="Ecobag Codewell">
         <h3>Ecobag Codewell</h3>
         <p>Sustentável, estilosa e com a identidade da nossa marca.</p>
-        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a ecobag da Codewell." class="botao-contato" target="_blank">Pedir no WhatsApp</a>
+        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a ecobag da Codewell." class="botao-contato"
+          target="_blank">Pedir no WhatsApp</a>
       </div>
       <div class="produto-card">
-        <img src="projeto/mockuplojinha/moletom.png" alt="Moletom Codewell">
+        <img src="my-web-project/assets/mockuplojinha/moletom.png" alt="Moletom Codewell">
         <h3>Moletom Codewell</h3>
         <p>Ideal para dias frios com muito estilo tech.</p>
-        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar o moletom da Codewell." class="botao-contato" target="_blank">Pedir no WhatsApp</a>
+        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar o moletom da Codewell." class="botao-contato"
+          target="_blank">Pedir no WhatsApp</a>
       </div>
       <div class="produto-card">
-        <img src="projeto/mockuplojinha/mousepad.png" alt="Mousepad Codewell">
+        <img src="my-web-project/assets/mockuplojinha/mousepad.png" alt="Mousepad Codewell">
         <h3>Mousepad Codewell</h3>
         <p>Conforto e precisão para codar com desempenho e a identidade da nossa marca.</p>
-        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a mousepad da Codewell." class="botao-contato" target="_blank">Pedir no WhatsApp</a>
+        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a mousepad da Codewell." class="botao-contato"
+          target="_blank">Pedir no WhatsApp</a>
       </div>
       <div class="produto-card">
-        <img src="projeto/mockuplojinha/agenda.png" alt="Agenda Codewell">
+        <img src="my-web-project/assets/mockuplojinha/agenda.png" alt="Agenda Codewell">
         <h3>Agenda Codewell</h3>
         <p>Anotações com a identidade da Codewell sempre com você.</p>
-        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a agenda da Codewell." class="botao-contato" target="_blank">Pedir no WhatsApp</a>
+        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a agenda da Codewell." class="botao-contato"
+          target="_blank">Pedir no WhatsApp</a>
       </div>
       <div class="produto-card">
-        <img src="projeto/mockuplojinha/garrafinha.png" alt="Garrafa Codewell">
+        <img src="my-web-project/assets/mockuplojinha/garrafinha.png" alt="Garrafa Codewell">
         <h3>Garrafa Codewell</h3>
         <p>Hidratação garantida com estilo enquanto você estuda ou trabalha.</p>
-        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a garrafa da Codewell." class="botao-contato" target="_blank">Pedir no WhatsApp</a>
+        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a garrafa da Codewell." class="botao-contato"
+          target="_blank">Pedir no WhatsApp</a>
       </div>
       <div class="produto-card">
-        <img src="projeto/mockuplojinha/caneca.png" alt="Caneca Codewell">
+        <img src="my-web-project/assets/mockuplojinha/caneca.png" alt="Caneca Codewell">
         <h3>Caneca Codewell</h3>
         <p>Perfeita para aquele café enquanto codamos.</p>
-        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a caneca da Codewell." class="botao-contato" target="_blank">Pedir no WhatsApp</a>
+        <a href="https://wa.me/5547988921670?text=Olá! Quero comprar a caneca da Codewell." class="botao-contato"
+          target="_blank">Pedir no WhatsApp</a>
       </div>
     </section>
   </main>
-  
+
   <footer>
-    <link rel="stylesheet" href="footer/footer.css" />
+    <link rel="stylesheet" href="my-web-project/componentes/footer/footer.css" />
     <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="my-web-project/script/script.js"></script>
   <script src="lojinha.js"></script>
 </body>
+
 </html>

@@ -4,23 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codewell | Empresa de TI</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <script src="my-web-project/script/script.js"></script>
+  <link rel="stylesheet" href="my-web-project/styles/style.css" />
+  <link rel="stylesheet" href="my-web-project/componentes/header/header.css" />
 </head>
 <body>
   <header>
-    <link rel="stylesheet" href="header/header.css" />
-    <nav>
-      <img src="projeto/img/logo.png" alt="Logo Codewell" class="logo" />
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="lojinha.html">Loja</a>
-        <a href="missao.html">Missão</a>
-        <a href="noticias.html">Missão</a>
-      </div>
-    </nav>  
-  </header>
+   <nav role="navigation" aria-label="Menu principal">
+  <img src="my-web-project/assets/img/logo.png" alt="Logo Codewell" class="logo" />
 
+  <button class="hamburguer" aria-label="Abrir menu">
+    ☰
+  </button>
+  
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="lojinha.html">Loja</a>
+    <a href="missao.html">Missão</a>
+    <a href="noticias.html">Notícias</a>
+  </div>
+</nav>
+ </header>
 
   <section id="missao">
     <h2>Nossa Missão</h2>
@@ -60,7 +65,7 @@
   </div>
 </section>
 <footer>
-  <link rel="stylesheet" href="footer/footer.css" />
+  <link rel="stylesheet" href="my-web-project/componentes/footer/footer.css" />
   <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
 </footer>
 </body>
