@@ -1,10 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.produto-card');
-  cards.forEach((card, index) => {
-    card.style.opacity = 0;
-    setTimeout(() => {
-      card.style.transition = 'opacity 0.5s ease';
-      card.style.opacity = 1;
-    }, 200 * index);
+    const imagens = document.querySelectorAll('.produto-img');
+
+ 
+    const modal = document.createElement('div');
+    modal.classList.add('js-imagem');
+    modal.innerHTML = '<img src="" alt="Imagem ampliada">';
+    document.body.appendChild(modal);
+
+    const modalImg = modal.querySelector('img');
+
+    imagens.forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        modal.classList.add('visivel');
+      });
+    });
+
+   
+    modal.addEventListener('click', (e) => {
+      if (e.target !== modalImg) {
+        modal.classList.remove('visivel');
+      }
+    });
   });
-});
+

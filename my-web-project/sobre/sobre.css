@@ -4,6 +4,23 @@ body {
   background-color: #ffffff;
   color: #0c0046;
 }
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 50px;
+  color: #0c0046;
+}
+
+.texto {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+
+  color: #5c5c5c;
+  max-width: 1000px;
+  margin: 20px auto 60px;
+  text-align: center;
+  padding: 0 20px;
+}
 
 h2 {
   text-align: center;

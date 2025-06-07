@@ -1,14 +1,15 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  color: #0c0046;
-}
-
 header {
   background-color: #0c0046;
   color: white;
   padding: 10px 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+header.header-animado {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .logo {
@@ -17,7 +18,7 @@ header {
 
 .menu {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   gap: 25px;
 }
 
@@ -32,6 +33,7 @@ header {
 .menu a:hover {
   color: #6600ff;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
