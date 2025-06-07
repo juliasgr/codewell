@@ -5,6 +5,8 @@ header {
   opacity: 0;
   transform: translateY(-30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  position: relative;
+  z-index: 1000;
 }
 
 header.header-animado {
@@ -14,24 +16,6 @@ header.header-animado {
 
 .logo {
   height: 80px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-  font-size: 1rem;
-}
-
-.menu a:hover {
-  color: #6600ff;
 }
 
 nav {
@@ -47,6 +31,18 @@ nav {
   gap: 20px;
 }
 
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.menu a:hover {
+  color: #6600ff;
+}
+
 .hamburguer {
   display: none;
   font-size: 28px;
@@ -60,13 +56,14 @@ nav {
   .menu {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 60px;
+    position: fixed; 
+    top: 70px; 
     right: 20px;
     background-color: #1b005c;
     padding: 15px;
     border-radius: 10px;
-    z-index: 1000;
+    z-index: 9999; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   .menu.active {
