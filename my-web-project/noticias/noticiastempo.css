@@ -1,0 +1,41 @@
+.pagina-noticia {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+.container p {
+max-width: 900px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.noticia-destaque h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.data-noticia {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.imagem-noticia {
+  width: 50%;
+  max-height: 100px;
+  object-fit: cover;
+   height: auto;  
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.conteudo-noticia p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #181818;
+}
+
+

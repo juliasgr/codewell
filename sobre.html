@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codewell | Empresa de TI</title>
-  <link rel="stylesheet" href="sobre/sobre.css" />
-  <link rel="stylesheet" href="header/header.css" />
-  <link rel="stylesheet" href="footer/footer.css" />
+  <link rel="stylesheet" href="my-web-project/styles/style.css" />
+  <link rel="stylesheet" href="my-web-project/componentes/header/header.css" />
+  <link rel="stylesheet" href="my-web-project/sobre/sobre.css" />
 </head>
 
 <body>
   <header>
-    <nav>
-      <img src="projeto/img/logo.png" alt="Logo Codewell" class="logo" />
-      <div class="menu">
+    <nav role="navigation" aria-label="Menu principal">
+      <img src="my-web-project/assets/img/logo.png" alt="Logo Codewell" class="logo" />
+
+      <button class="hamburguer" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <div class="menu" id="menu">
         <a href="index.html">Home</a>
         <a href="sobre.html">Sobre</a>
         <a href="lojinha.html">Loja</a>
@@ -25,63 +31,52 @@
 
   <main>
     <h2>Nossa História</h2>
-    <div class="timeline">
-      <div class="timeline-event">
-        <div class="timeline-dot" data-tooltip="Fundação da Codewell"></div>
-        <p class="timeline-year">2005</p>
-      </div>
-      <div class="timeline-event">
-        <div class="timeline-dot" data-tooltip="x"></div>
-        <p class="timeline-year">x</p>
-      </div>
-      <div class="timeline-event">
-        <div class="timeline-dot" data-tooltip="x"></div>
-        <p class="timeline-year">x</p>
-      </div>
-      <div class="timeline-event">
-        <div class="timeline-dot" data-tooltip="x"></div>
-        <p class="timeline-year">x</p>
-      </div>
-      <div class="timeline-event">
-        <div class="timeline-dot" data-tooltip="x"></div>
-        <p class="timeline-year">x</p>
-      </div>
-    </div>
-
-    <section class="about-text">
+    <section class="sobre">
       <p>
         A Codewell nasceu com o propósito de levar inovação para empresas através da tecnologia. Desde nossa fundação,
-        evoluímos constantemente com foco em qualidade, equipe qualificada e soluções personalizadas para nossos clientes.
+        evoluímos constantemente com foco em qualidade, equipe qualificada e soluções personalizadas para nossos
+        clientes.
       </p>
     </section>
 
     <h2>Nossos colaboradores:</h2>
     <section class="fotos-funcionarios">
-      <img src="projeto/img/grupo1.jpg" alt="Funcionário 1" />
-      <img src="projeto/img/grupo2.jpg" alt="Funcionário 2" />
-      <img src="projeto/img/grupo3.jpg" alt="Funcionário 3" />
-      <img src="projeto/img/grupo4.jpg" alt="Funcionário 4" />
+      <img src="my-web-project/assets/img/grupo1.jpg" alt="Funcionário 1" />
+      <img src="my-web-project/assets/img/grupo2.jpg" alt="Funcionário 2" />
+      <img src="my-web-project/assets/img/grupo3.jpg" alt="Funcionário 3" />
+      <img src="my-web-project/assets/img/grupo4.jpg" alt="Funcionário 4" />
+      <img src="my-web-project/assets/img/grupo5.jpg" alt="Funcionário 5" />
+
     </section>
 
     <section class="dev-section">
       <h3>Desenvolvido por:</h3>
       <div class="devs">
         <div>
-          <img src="projeto/img/julia.jpg" alt="Julia de Souza Seger" class="foto-dev" />
+          <img src="my-web-project/assets/img/julia.jpg" alt="Julia de Souza Seger" class="foto-dev" />
           <p class="names">Julia de Souza Seger</p>
         </div>
         <div>
-          <img src="projeto/img/julia.jpg" alt="Iasmin Cristina Krueger" class="foto-dev" />
+          <img src="my-web-project/assets/img/julia.jpg" alt="Iasmin Cristina Krueger" class="foto-dev" />
           <p class="names">Iasmin Cristina Krueger</p>
         </div>
       </div>
     </section>
   </main>
+  <h1>Projeto</h1>
+  <p class="texto">
+    Este site foi desenvolvido como parte de um projeto acadêmico do curso de Engenharia de Software da Católica de
+    Santa Catarina. Seu conteúdo e funcionalidades são voltados exclusivamente para fins de estudo e não possuem
+    finalidade comercial.
+  </p>
+
 
   <footer>
+    <link rel="stylesheet" href="my-web-project/componentes/footer/footer.css" />
     <p>&copy; 2025 Codewell. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="my-web-project/script/script.js"></script>
 </body>
+
 </html>

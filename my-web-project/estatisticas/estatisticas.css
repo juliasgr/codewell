@@ -1,0 +1,40 @@
+.estatisticas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .estatisticas .item {
+    flex: 1 1 180px;
+    max-width: 200px;
+  }
+  
+  .estatisticas h3 {
+    font-size: 2.5rem;
+    color: #0033a0; 
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .estatisticas p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .estatisticas {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .estatisticas .item {
+      max-width: none;
+      margin-bottom: 20px;
+    }
+  }
+  
