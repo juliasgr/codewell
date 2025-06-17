@@ -15,6 +15,7 @@
     font-size: 18px;
     margin-bottom: 30px;
     color: #333;
+
   }
   
   .palavras-chave {
@@ -25,10 +26,11 @@
   }
   
   .tag {
-    background-color: #f0f0f0;
+    background-color:  #f9f9f9;;;
     color: #0c0046;
     padding: 20px;
     border-radius: 20px;
+    border: 1px solid #150050;
     font-size: 20px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
@@ -36,13 +38,14 @@
   
   .tag:hover {
     background-color: #0c0046;
-    color: white;
+    color: #f9f9f9;;;
+    border-color: #150050;
   }
   
   #visao-valores {
     padding: 60px 20px;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
+
   }
   
   .container-visao-valores {
@@ -69,12 +72,13 @@
   
   .caixa-grande {
     background-color: #f9f9f9;
-    border: 2px solid #ccc;
+    border: 2px solid #f0efef;
     border-radius: 16px;
     padding: 28px 24px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-bottom: 24px;
+    
   }
   
   .caixa-grande h3 {
