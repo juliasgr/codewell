@@ -305,6 +305,7 @@ section {
   width: 100%;
   border-radius: 15px;
 }
+
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -318,19 +319,6 @@ section {
 
    .contato-container {
     flex-direction: column;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-texto {
-    text-align: left;
   }
 
   .hero-texto h1 {
