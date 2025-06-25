@@ -45,3 +45,67 @@ body {
 }
 
 
+#visao-valores {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.visao-valores-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visao-valores-wrapper h2 {
+  font-size: 32px;
+  color: #0c0046;
+  margin-bottom: 40px;
+}
+
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.valor-item {
+  background-color: #ffffff;
+  border: 2px solid #150050;
+  border-radius: 16px;
+  padding: 28px 24px;
+  flex: 1 1 280px;
+  max-width: 350px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.valor-item h3 {
+  font-size: 20px;
+  color: #150050;
+  margin-bottom: 12px;
+}
+
+.valor-item p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.valor-item:hover {
+  background-color: #150050;
+  color: #fff;
+  border-color: #150050;
+}
+
+.valor-item:hover h3,
+.valor-item:hover p {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .valores-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
